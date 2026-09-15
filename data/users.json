@@ -1,0 +1,42 @@
+[
+  {
+    "id": "user-admin-1",
+    "name": "Morgan Vance",
+    "email": "admin@company.internal",
+    "role": "admin",
+    "title": "VP of People Operations",
+    "department": "Human Resources",
+    "avatar": "MV",
+    "createdAt": "2026-01-10T09:00:00.000Z"
+  },
+  {
+    "id": "user-employee-1",
+    "name": "Alex Rivera",
+    "email": "alex.rivera@company.internal",
+    "role": "employee",
+    "title": "Senior Fullstack Engineer",
+    "department": "Engineering",
+    "avatar": "AR",
+    "createdAt": "2026-02-01T10:30:00.000Z"
+  },
+  {
+    "id": "user-employee-2",
+    "name": "Taylor Kim",
+    "email": "taylor.kim@company.internal",
+    "role": "employee",
+    "title": "Product Marketing Specialist",
+    "department": "Marketing",
+    "avatar": "TK",
+    "createdAt": "2026-02-15T14:15:00.000Z"
+  },
+  {
+    "id": "user-1788449842962-78po",
+    "name": "Jordan Lee",
+    "email": "jordan.lee@company.internal",
+    "role": "employee",
+    "title": "UX Designer",
+    "department": "Product",
+    "avatar": "JL",
+    "createdAt": "2026-09-03T15:37:22.962Z"
+  }
+]

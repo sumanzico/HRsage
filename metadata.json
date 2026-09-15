@@ -1,0 +1,8 @@
+{
+  "name": "HRSage",
+  "description": "Internal HR knowledge assistant that answers employee questions on benefits, paid time off, and company policies with verified source citations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

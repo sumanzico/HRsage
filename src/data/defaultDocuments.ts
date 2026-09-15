@@ -1,0 +1,319 @@
+import { HRDocument } from '../types';
+
+export const DEFAULT_DOCUMENTS: HRDocument[] = [
+  {
+    id: 'doc-pto-leave',
+    title: 'Paid Time Off (PTO) & Leave Policy',
+    category: 'Time Off',
+    fileName: 'Acme_PTO_and_Leave_Policy_2026.pdf',
+    lastUpdated: 'Jan 15, 2026',
+    version: 'v3.2',
+    summary: 'Guidelines on PTO accrual tiers, 5-day rollover maximums, sick days, 16-week parental leave, and bereavement.',
+    sections: [
+      {
+        id: 'pto-accrual',
+        title: 'Section 1: Annual PTO Accrual & Tiers',
+        content: `Full-time exempt employees accrue paid vacation time monthly based on continuous tenure with Acme Corporation:
+- Tier 1 (Years 0 to 2): Accrue 16 days (128 hours) per calendar year, accrued at 1.33 days per full month worked.
+- Tier 2 (Years 3 to 5): Accrue 21 days (168 hours) per calendar year, accrued at 1.75 days per full month worked.
+- Tier 3 (Years 5+): Accrue 26 days (208 hours) per calendar year, accrued at 2.16 days per full month worked.
+Part-time regular employees accrue PTO on a pro-rata basis corresponding to scheduled weekly hours.`
+      },
+      {
+        id: 'pto-rollover',
+        title: 'Section 2: Year-End Rollover, Caps & Expiration',
+        content: `A maximum of 5 unused PTO days (40 hours) may be carried over from one calendar year to the next.
+Any accrued balance beyond 5 days that remains unused by 11:59 PM on December 31 will expire and be forfeited without cash payout, in compliance with state guidelines, unless an employee was explicitly barred from taking scheduled leave due to a critical operational emergency approved in writing by an Executive VP prior to December 1.
+Carried-over days must be utilized within the first 6 months (by June 30) of the subsequent year.`
+      },
+      {
+        id: 'pto-sick-mental-health',
+        title: 'Section 3: Dedicated Sick & Mental Health Days',
+        content: `All regular employees receive 5 dedicated paid sick/wellness days per calendar year, front-loaded on January 1st (or prorated upon hire date).
+Sick days are entirely distinct from standard PTO and are intended for physical illness, medical appointments, mental health decompression, or caring for an immediate family member.
+A licensed physician's note is only required if an employee is absent for more than three (3) consecutive business days. Unused sick days do not roll over or pay out upon termination.`
+      },
+      {
+        id: 'pto-parental-leave',
+        title: 'Section 4: Paid Parental & Caregiver Leave',
+        content: `Acme provides comprehensive paid parental leave for new parents following birth, adoption, or foster placement:
+- Primary Caregiver: Up to 16 consecutive weeks of 100% regular base salary continuation.
+- Secondary Caregiver: Up to 8 consecutive weeks of 100% regular base salary continuation.
+Eligibility begins after 90 days of continuous full-time employment. Parental leave may be taken in up to two distinct blocks within the child's first 12 months. Employees must submit a Parental Leave Request form to People Ops at least 30 calendar days prior to expected commencement.`
+      },
+      {
+        id: 'pto-bereavement-jury',
+        title: 'Section 5: Bereavement & Civic Duties (Jury Duty)',
+        content: `Bereavement Leave: Employees are granted up to five (5) consecutive business days of fully paid leave for the loss of an immediate family member (spouse, domestic partner, child, parent, sibling) and up to three (3) days for extended family members.
+Jury Duty: Acme pays full regular base salary for up to ten (10) working days of mandated jury duty service. Proof of jury summons and attendance verification from the court clerk must be submitted to HR.`
+      }
+    ],
+    content: `# Acme Paid Time Off (PTO) & Leave Policy (2026)
+
+## Section 1: Annual PTO Accrual & Tiers
+Full-time exempt employees accrue paid vacation time monthly based on continuous tenure with Acme Corporation:
+- Tier 1 (Years 0 to 2): Accrue 16 days (128 hours) per calendar year, accrued at 1.33 days per full month worked.
+- Tier 2 (Years 3 to 5): Accrue 21 days (168 hours) per calendar year, accrued at 1.75 days per full month worked.
+- Tier 3 (Years 5+): Accrue 26 days (208 hours) per calendar year, accrued at 2.16 days per full month worked.
+Part-time regular employees accrue PTO on a pro-rata basis corresponding to scheduled weekly hours.
+
+## Section 2: Year-End Rollover, Caps & Expiration
+A maximum of 5 unused PTO days (40 hours) may be carried over from one calendar year to the next.
+Any accrued balance beyond 5 days that remains unused by 11:59 PM on December 31 will expire and be forfeited without cash payout, in compliance with state guidelines, unless an employee was explicitly barred from taking scheduled leave due to a critical operational emergency approved in writing by an Executive VP prior to December 1. Carried-over days must be utilized within the first 6 months (by June 30) of the subsequent year.
+
+## Section 3: Dedicated Sick & Mental Health Days
+All regular employees receive 5 dedicated paid sick/wellness days per calendar year, front-loaded on January 1st (or prorated upon hire date). Sick days are entirely distinct from standard PTO and are intended for physical illness, medical appointments, mental health decompression, or caring for an immediate family member. A licensed physician's note is only required if an employee is absent for more than three (3) consecutive business days. Unused sick days do not roll over or pay out upon termination.
+
+## Section 4: Paid Parental & Caregiver Leave
+Acme provides comprehensive paid parental leave for new parents following birth, adoption, or foster placement:
+- Primary Caregiver: Up to 16 consecutive weeks of 100% regular base salary continuation.
+- Secondary Caregiver: Up to 8 consecutive weeks of 100% regular base salary continuation.
+Eligibility begins after 90 days of continuous full-time employment. Parental leave may be taken in up to two distinct blocks within the child's first 12 months. Employees must submit a Parental Leave Request form to People Ops at least 30 calendar days prior to expected commencement.
+
+## Section 5: Bereavement & Civic Duties (Jury Duty)
+Bereavement Leave: Employees are granted up to five (5) consecutive business days of fully paid leave for the loss of an immediate family member (spouse, domestic partner, child, parent, sibling) and up to three (3) days for extended family members.
+Jury Duty: Acme pays full regular base salary for up to ten (10) working days of mandated jury duty service. Proof of jury summons and attendance verification from the court clerk must be submitted to HR.`
+  },
+  {
+    id: 'doc-benefits-guide',
+    title: 'Health Benefits & Wellness Coverage Guide',
+    category: 'Benefits',
+    fileName: 'Acme_Benefits_Guide_2026.pdf',
+    lastUpdated: 'Feb 1, 2026',
+    version: 'v4.0',
+    summary: 'Medical PPO & HDHP plans, company HSA matching contributions, dental, vision, Lyra mental health, and gym stipends.',
+    sections: [
+      {
+        id: 'benefits-medical',
+        title: 'Section 1: Medical Insurance (PPO vs HDHP)',
+        content: `Acme offers two medical insurance choices administered through BlueShield:
+1. Premier PPO: In-network individual deductible is $500 ($1,000 family). Primary care copay is $25, specialist copay is $45. Generic prescription copay is $10.
+2. High Deductible Health Plan (HDHP) with HSA: In-network individual deductible is $1,750 ($3,500 family). All eligible expenses apply to deductible first before 10% co-insurance.
+Company Subsidy: Acme funds 90% of employee-only premiums and 75% of dependent/family premiums across both plans.`
+      },
+      {
+        id: 'benefits-hsa-fsa',
+        title: 'Section 2: Health Savings Account (HSA) Company Match',
+        content: `Employees enrolled in the HDHP qualify for an employer-sponsored Health Savings Account (HSA) with pre-tax payroll deductions.
+Acme automatically contributes:
+- $750 per year for Individual coverage.
+- $1,500 per year for Employee + Spouse/Family coverage.
+Employer contributions are disbursed in four equal quarterly installments on the first payroll of January, April, July, and October. HSA funds roll over indefinitely and belong to the employee.`
+      },
+      {
+        id: 'benefits-dental-vision',
+        title: 'Section 3: Dental & Vision Plans',
+        content: `Dental (Delta Dental Premier): 100% covered for bi-annual cleanings, exams, and diagnostic X-rays. Basic restorative care (fillings, root canals) covered at 80%. Annual individual maximum benefit is $2,000.
+Vision (VSP Vision Plan): Annual comprehensive eye exam covered with a $10 copay. Prescription hardware allowance: $200 every 12 months for frames or prescription contact lenses, plus standard discounts on laser corrective surgery.`
+      },
+      {
+        id: 'benefits-mental-wellness',
+        title: 'Section 4: Mental Health (Lyra Health EAP) & Wellness Stipend',
+        content: `Mental Health Support: Through Lyra Health, all employees and their dependents receive ten (10) confidential, 100% free therapy or mental health coaching sessions per calendar year. Access is available 24/7 online at lyra.acmecorp.com or via 1-800-555-LYRA.
+Wellness & Fitness Stipend: Acme provides a $50 per month ($600/year) fitness reimbursement. Covered expenses include gym memberships, yoga/pilates classes, fitness tracker subscriptions, or mindfulness apps (e.g., Headspace, Calm). Submit monthly receipts in Expensify under category "Wellness Subsidy".`
+      }
+    ],
+    content: `# Health Benefits & Wellness Coverage Guide (Plan Year 2026)
+
+## Section 1: Medical Insurance (PPO vs HDHP)
+Acme offers two medical insurance choices administered through BlueShield:
+1. Premier PPO: In-network individual deductible is $500 ($1,000 family). Primary care copay is $25, specialist copay is $45. Generic prescription copay is $10.
+2. High Deductible Health Plan (HDHP) with HSA: In-network individual deductible is $1,750 ($3,500 family). All eligible expenses apply to deductible first before 10% co-insurance.
+Company Subsidy: Acme funds 90% of employee-only premiums and 75% of dependent/family premiums across both plans.
+
+## Section 2: Health Savings Account (HSA) Company Match
+Employees enrolled in the HDHP qualify for an employer-sponsored Health Savings Account (HSA) with pre-tax payroll deductions.
+Acme automatically contributes:
+- $750 per year for Individual coverage.
+- $1,500 per year for Employee + Spouse/Family coverage.
+Employer contributions are disbursed in four equal quarterly installments on the first payroll of January, April, July, and October. HSA funds roll over indefinitely and belong to the employee.
+
+## Section 3: Dental & Vision Plans
+Dental (Delta Dental Premier): 100% covered for bi-annual cleanings, exams, and diagnostic X-rays. Basic restorative care (fillings, root canals) covered at 80%. Annual individual maximum benefit is $2,000.
+Vision (VSP Vision Plan): Annual comprehensive eye exam covered with a $10 copay. Prescription hardware allowance: $200 every 12 months for frames or prescription contact lenses, plus standard discounts on laser corrective surgery.
+
+## Section 4: Mental Health (Lyra Health EAP) & Wellness Stipend
+Mental Health Support: Through Lyra Health, all employees and their dependents receive ten (10) confidential, 100% free therapy or mental health coaching sessions per calendar year. Access is available 24/7 online at lyra.acmecorp.com or via 1-800-555-LYRA.
+Wellness & Fitness Stipend: Acme provides a $50 per month ($600/year) fitness reimbursement. Covered expenses include gym memberships, yoga/pilates classes, fitness tracker subscriptions, or mindfulness apps (e.g., Headspace, Calm). Submit monthly receipts in Expensify under category "Wellness Subsidy".`
+  },
+  {
+    id: 'doc-401k-policy',
+    title: '401(k) Retirement Savings & Financial Perks',
+    category: 'Benefits',
+    fileName: 'Acme_401k_Retirement_Plan_Summary.pdf',
+    lastUpdated: 'Jan 3, 2026',
+    version: 'v2.8',
+    summary: 'Fidelity 401(k) retirement plan with instant 100% vesting, 5% matching formula, and financial advisor access.',
+    sections: [
+      {
+        id: '401k-match',
+        title: 'Section 1: Company Matching Formula',
+        content: `Acme Corporation partners with Fidelity Investments to offer a tax-advantaged 401(k) plan (both traditional pre-tax and Roth options).
+Company Match Formula:
+- 100% dollar-for-dollar match on the first 4% of the employee's eligible compensation.
+- 50% match on the next 2% of eligible compensation.
+For example: If you contribute 6% of your gross salary, Acme contributes an additional 5% matching contribution, totaling an 11% overall retirement savings rate. Contributions beyond 6% are welcome up to annual IRS statutory limits, but will not receive additional employer matching.`
+      },
+      {
+        id: '401k-vesting',
+        title: 'Section 2: Vesting Schedule & Auto-Enrollment',
+        content: `Vesting Schedule: 100% Immediate Vesting. All employer matching contributions belong to the employee immediately upon deposit with zero multi-year vesting cliff.
+Auto-Enrollment: All new regular employees are automatically enrolled at a 4% pre-tax contribution rate 30 calendar days following their start date. Employees may change their percentage, opt for Roth contributions, or opt out entirely at any time through the Fidelity NetBenefits portal (fidelity.com/acme).`
+      },
+      {
+        id: '401k-counseling',
+        title: 'Section 3: Free Certified Financial Advisory Sessions',
+        content: `All active employees have complimentary access to certified financial planners (CFPs) through Fidelity. Each employee may schedule up to four (4) confidential 45-minute virtual sessions per year at no cost to review retirement goals, student loan payoff strategies, and 529 college savings plans.`
+      }
+    ],
+    content: `# 401(k) Retirement Savings & Financial Perks
+
+## Section 1: Company Matching Formula
+Acme Corporation partners with Fidelity Investments to offer a tax-advantaged 401(k) plan (both traditional pre-tax and Roth options).
+Company Match Formula:
+- 100% dollar-for-dollar match on the first 4% of the employee's eligible compensation.
+- 50% match on the next 2% of eligible compensation.
+For example: If you contribute 6% of your gross salary, Acme contributes an additional 5% matching contribution, totaling an 11% overall retirement savings rate. Contributions beyond 6% are welcome up to annual IRS statutory limits, but will not receive additional employer matching.
+
+## Section 2: Vesting Schedule & Auto-Enrollment
+Vesting Schedule: 100% Immediate Vesting. All employer matching contributions belong to the employee immediately upon deposit with zero multi-year vesting cliff.
+Auto-Enrollment: All new regular employees are automatically enrolled at a 4% pre-tax contribution rate 30 calendar days following their start date. Employees may change their percentage, opt for Roth contributions, or opt out entirely at any time through the Fidelity NetBenefits portal (fidelity.com/acme).
+
+## Section 3: Free Certified Financial Advisory Sessions
+All active employees have complimentary access to certified financial planners (CFPs) through Fidelity. Each employee may schedule up to four (4) confidential 45-minute virtual sessions per year at no cost to review retirement goals, student loan payoff strategies, and 529 college savings plans.`
+  },
+  {
+    id: 'doc-remote-work',
+    title: 'Remote Work, Working Hours & Equipment Policy',
+    category: 'General Policies',
+    fileName: 'Acme_Remote_Work_and_Equipment_2026.pdf',
+    lastUpdated: 'Jan 20, 2026',
+    version: 'v2.4',
+    summary: 'Rules for hybrid working, core collaboration hours, home office stipend ($750), cell/internet subsidy, and travel limits.',
+    sections: [
+      {
+        id: 'remote-hours',
+        title: 'Section 1: Flexible Working Hours & Core Window',
+        content: `Acme supports a flexible hybrid workplace model.
+Core Collaboration Hours: While teams set their own schedules, all employees must be available for synchronous communication, meetings, and team touchpoints between 10:00 AM and 3:00 PM in their designated local time zone.
+Outside of this core 5-hour window, employees have flexibility to schedule their remaining daily working hours as best suits their productivity.`
+      },
+      {
+        id: 'remote-stipend',
+        title: 'Section 2: Home Office Setup & Monthly Utilities Stipend',
+        content: `Home Office Equipment Stipend: Upon hire, all remote or hybrid employees receive a one-time reimbursement of up to $750 for ergonomic chairs, external monitors, standing desks, keyboards, or lighting. Equipment purchases must be submitted within 60 days of starting.
+Monthly Tech & Internet Allowance: Active remote and hybrid employees working from home at least 2 days per week receive a non-taxable $75 monthly stipend processed automatically on the second payroll of each month to offset home internet and mobile data expenses (no receipts needed).`
+      },
+      {
+        id: 'remote-travel',
+        title: 'Section 3: Domestic & International Remote Work Limits',
+        content: `Working from another State (Domestic): Employees may work remotely from another US state for up to thirty (30) cumulative business days per calendar year, subject to manager notification, provided company cybersecurity standards are maintained.
+Working Internationally: Due to cross-border tax, payroll nexus, and data sovereignty compliance laws, international remote work is strictly capped at fourteen (14) consecutive calendar days per trip, up to twenty-one (21) days per year total. International remote work requires prior written approval from People Ops at least 15 days before departure.`
+      }
+    ],
+    content: `# Remote Work, Working Hours & Equipment Policy
+
+## Section 1: Flexible Working Hours & Core Window
+Acme supports a flexible hybrid workplace model.
+Core Collaboration Hours: While teams set their own schedules, all employees must be available for synchronous communication, meetings, and team touchpoints between 10:00 AM and 3:00 PM in their designated local time zone.
+Outside of this core 5-hour window, employees have flexibility to schedule their remaining daily working hours as best suits their productivity.
+
+## Section 2: Home Office Setup & Monthly Utilities Stipend
+Home Office Equipment Stipend: Upon hire, all remote or hybrid employees receive a one-time reimbursement of up to $750 for ergonomic chairs, external monitors, standing desks, keyboards, or lighting. Equipment purchases must be submitted within 60 days of starting.
+Monthly Tech & Internet Allowance: Active remote and hybrid employees working from home at least 2 days per week receive a non-taxable $75 monthly stipend processed automatically on the second payroll of each month to offset home internet and mobile data expenses (no receipts needed).
+
+## Section 3: Domestic & International Remote Work Limits
+Working from another State (Domestic): Employees may work remotely from another US state for up to thirty (30) cumulative business days per calendar year, subject to manager notification, provided company cybersecurity standards are maintained.
+Working Internationally: Due to cross-border tax, payroll nexus, and data sovereignty compliance laws, international remote work is strictly capped at fourteen (14) consecutive calendar days per trip, up to twenty-one (21) days per year total. International remote work requires prior written approval from People Ops at least 15 days before departure.`
+  },
+  {
+    id: 'doc-learning-growth',
+    title: 'Professional Development & Tuition Reimbursement',
+    category: 'Career & Learning',
+    fileName: 'Acme_Learning_Development_Policy.pdf',
+    lastUpdated: 'Nov 18, 2025',
+    version: 'v1.9',
+    summary: '$1,500 annual learning stipend, conference budgets, certification approvals, and 6-month retention terms.',
+    sections: [
+      {
+        id: 'learning-allowance',
+        title: 'Section 1: Annual Learning Budget ($1,500)',
+        content: `Each regular full-time employee who has completed at least 90 days of tenure is allocated an annual Professional Development budget of $1,500 per calendar year.
+Eligible expenses:
+- Industry conference attendance fees and workshops
+- Professional certifications and renewal fees (e.g., AWS, PMP, SHRM, CPA)
+- Online courses (e.g., Coursera, Udemy, Reforge, O'Reilly)
+- Relevant technical or leadership books
+Budgets reset on January 1 and do not roll over to subsequent years.`
+      },
+      {
+        id: 'learning-approval',
+        title: 'Section 2: Pre-Approval Workflow & Retention Clause',
+        content: `Pre-Approval Requirement: Employees must submit a Learning Request ticket via Jira Service Desk approved by their direct Department Manager prior to incurring the expense. Retroactive requests will not be reimbursed.
+Retention / Clawback Terms: For individual courses, degrees, or certifications exceeding $1,000 funded by the company, if the employee voluntarily resigns within six (6) months of course completion, 50% of the reimbursed amount must be repaid to Acme via final payroll deduction.`
+      }
+    ],
+    content: `# Professional Development & Tuition Reimbursement
+
+## Section 1: Annual Learning Budget ($1,500)
+Each regular full-time employee who has completed at least 90 days of tenure is allocated an annual Professional Development budget of $1,500 per calendar year.
+Eligible expenses:
+- Industry conference attendance fees and workshops
+- Professional certifications and renewal fees (e.g., AWS, PMP, SHRM, CPA)
+- Online courses (e.g., Coursera, Udemy, Reforge, O'Reilly)
+- Relevant technical or leadership books
+Budgets reset on January 1 and do not roll over to subsequent years.
+
+## Section 2: Pre-Approval Workflow & Retention Clause
+Pre-Approval Requirement: Employees must submit a Learning Request ticket via Jira Service Desk approved by their direct Department Manager prior to incurring the expense. Retroactive requests will not be reimbursed.
+Retention / Clawback Terms: For individual courses, degrees, or certifications exceeding $1,000 funded by the company, if the employee voluntarily resigns within six (6) months of course completion, 50% of the reimbursed amount must be repaid to Acme via final payroll deduction.`
+  },
+  {
+    id: 'doc-travel-expense',
+    title: 'Business Travel & Expense Guidelines',
+    category: 'Expenses',
+    fileName: 'Acme_Travel_and_Expense_Policy_2026.pdf',
+    lastUpdated: 'Jan 10, 2026',
+    version: 'v2.1',
+    summary: 'Meal per diem ($75/day), flight booking criteria, ground transportation, and 30-day submission requirements.',
+    sections: [
+      {
+        id: 'expense-per-diem',
+        title: 'Section 1: Daily Meal Per Diem ($75)',
+        content: `When traveling for company business overnight, employees are provided a daily meal per diem of $75 per day:
+- Breakfast: $18
+- Lunch: $22
+- Dinner: $35
+Itemized receipts are not required for individual meals covered under the $75 daily cap, unless charged directly to a corporate credit card. Alcohol is not reimbursable unless as part of an executive-approved client dinner.`
+      },
+      {
+        id: 'expense-flights-hotels',
+        title: 'Section 2: Flights & Hotel Bookings',
+        content: `Flights: All domestic travel must be booked in standard Economy/Coach class through Navan (corporate travel portal). For international flights with nonstop flying time exceeding 7 hours, Premium Economy is authorized.
+Hotels: Standard business hotel rooms up to $250/night (or $320/night in tier-1 metropolitan cities like NYC, SF, London) are pre-approved.`
+      },
+      {
+        id: 'expense-submission',
+        title: 'Section 3: Expense Submission Window (30 Days)',
+        content: `All business expenses and travel reimbursements must be submitted through Expensify within thirty (30) calendar days of the transaction or trip completion date.
+Reports submitted after 60 days require Department VP sign-off and may be denied according to IRS taxable income guidelines.`
+      }
+    ],
+    content: `# Business Travel & Expense Guidelines
+
+## Section 1: Daily Meal Per Diem ($75)
+When traveling for company business overnight, employees are provided a daily meal per diem of $75 per day:
+- Breakfast: $18
+- Lunch: $22
+- Dinner: $35
+Itemized receipts are not required for individual meals covered under the $75 daily cap, unless charged directly to a corporate credit card. Alcohol is not reimbursable unless as part of an executive-approved client dinner.
+
+## Section 2: Flights & Hotel Bookings
+Flights: All domestic travel must be booked in standard Economy/Coach class through Navan (corporate travel portal). For international flights with nonstop flying time exceeding 7 hours, Premium Economy is authorized.
+Hotels: Standard business hotel rooms up to $250/night (or $320/night in tier-1 metropolitan cities like NYC, SF, London) are pre-approved.
+
+## Section 3: Expense Submission Window (30 Days)
+All business expenses and travel reimbursements must be submitted through Expensify within thirty (30) calendar days of the transaction or trip completion date.
+Reports submitted after 60 days require Department VP sign-off and may be denied according to IRS taxable income guidelines.`
+  }
+];
