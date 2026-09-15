@@ -1,0 +1,31 @@
+version: 1.0
+runtime: nodejs18
+
+build:
+  commands:
+    build:
+      - npm install
+      - npm run build
+
+run:
+  # `npm run start` == `node dist/server.cjs` (esbuild bundle of server.ts)
+  command: npm run start
+  network:
+    # App Runner injects this value as PORT, which server.ts reads.
+    port: 8080
+  env:
+    # Required: without this, server.ts mounts Vite dev middleware
+    # instead of serving the built dist/ bundle.
+    - name: NODE_ENV
+      value: production
+
+  # GEMINI_API_KEY is deliberately NOT set here -- this file is committed to
+  # the repo. Set it on the App Runner service instead (console: Configuration
+  # -> Environment variables), or reference Secrets Manager:
+  #
+  # secrets:
+  #   - name: GEMINI_API_KEY
+  #     value-from: "arn:aws:secretsmanager:us-east-1:893089245567:secret:hrsage/gemini-api-key"
+  #
+  # With no key set, server.ts falls back to its offline rule-based
+  # retrieval, so the app still serves answers.
