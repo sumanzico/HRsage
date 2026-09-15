@@ -23,7 +23,10 @@ const PORT = Number(process.env.PORT) || 3000;
 
 app.use(express.json({ limit: "10mb" }));
 
-const DATA_DIR = path.join(process.cwd(), "data");
+// DATA_DIR is overridable so the JSON store can live outside the deploy
+// directory. On Elastic Beanstalk each deploy replaces /var/app/current,
+// so pointing this at a path outside that tree keeps data across deploys.
+const DATA_DIR = process.env.DATA_DIR || path.join(process.cwd(), "data");
 const USERS_FILE = path.join(DATA_DIR, "users.json");
 const DOCS_FILE = path.join(DATA_DIR, "documents.json");
 const QUESTIONS_FILE = path.join(DATA_DIR, "questions_history.json");
